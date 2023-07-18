@@ -55,7 +55,7 @@ namespace _18_jul_Assignment_9
             }
             finally
             {
-                Console.WriteLine("End of the Program");
+                Console.WriteLine("*** Thank You ***");
                 Console.ReadKey();
             }
         }
