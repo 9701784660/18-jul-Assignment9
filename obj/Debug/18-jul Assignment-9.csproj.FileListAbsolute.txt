@@ -1,0 +1,7 @@
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\bin\Debug\18-jul Assignment-9.exe.config
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\bin\Debug\18-jul Assignment-9.exe
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\bin\Debug\18-jul Assignment-9.pdb
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\obj\Debug\18-jul Assignment-9.csproj.AssemblyReference.cache
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\obj\Debug\18-jul Assignment-9.csproj.CoreCompileInputs.cache
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\obj\Debug\18-jul Assignment-9.exe
+D:\exercises\18-7\18-jul Assignment-9\18-jul Assignment-9\obj\Debug\18-jul Assignment-9.pdb
