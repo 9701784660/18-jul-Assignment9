@@ -7,58 +7,51 @@ using System.Threading.Tasks;
 namespace _18_jul_Assignment_9
 {
 
-    public class ValidationException : Exception
+   public class CustomException : Exception
     {
-        public ValidationException(string message) : base(message) { }
+        public CustomException(string message) : base(message)
+        {
+
+        }
     }
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            string userName, email, password;
-
             try
             {
-                Console.WriteLine("Enter userName");
-                userName = Console.ReadLine();
-                Console.WriteLine("Enter password");
-                password = Console.ReadLine();
-                Console.WriteLine("Enter email");
+                string username,email,password;
+                Console.WriteLine("Enter User Name");
+                username = (Console.ReadLine());
+                Console.WriteLine("Enter Email ");
                 email = Console.ReadLine();
-                if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+                Console.WriteLine("Enter Password");
+                password = Console.ReadLine();
+                if (username.Length<6 )
                 {
-                    throw new ValidationException("All fields are required.");
-                }
-                if (userName.Length < 6)
-                {
-                    throw new ValidationException("User name must have atleast 6 characters ");
+                    throw new CustomException("The Username Should have minimum six Characters");
                 }
                 else if (password.Length < 8)
                 {
-                    throw new ValidationException("Password must have atleast 8 characters");
+                    Console.WriteLine("The Password Must have Minimum 8 characters");
                 }
-                else
+                else if(username.Length>=6 && password.Length>=8)
                 {
-                    Console.WriteLine("  Registration Success");
-                    Console.WriteLine($"Given name : {userName}\t  Password is : {password} \t  email is :{email}");
-
+                    Console.WriteLine("Registration Successfull");
+                    Console.WriteLine($"Username: {username} \n Email: {email} \n Password: {password}");
                 }
-
             }
-            catch (ValidationException e)
+            catch(Exception ex)
             {
-                Console.WriteLine("Validation Error " + e.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error " + ex.Message);
+                Console.WriteLine("Error!!!" + ex.Message);
             }
             finally
             {
                 Console.WriteLine("*** Thank You ***");
                 Console.ReadKey();
             }
-        }
-    }
-
+        }
+    }
 }
+
+
